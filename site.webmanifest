@@ -1,0 +1,16 @@
+{
+  "name": "Lumière Hair & Beauty Atelier",
+  "short_name": "Lumière",
+  "description": "A hair & beauty atelier in Makati, Manila. Quietly considered transformations since 2012.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#f5efe6",
+  "theme_color": "#1a1410",
+  "icons": [
+    {
+      "src": "favicon/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
