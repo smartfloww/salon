@@ -1747,6 +1747,10 @@ body:not(.page-home) .hero {
 .sticky-cta { display: none; }
 
 @media (max-width: 879px) {
+  .page-home .hero {
+    padding-bottom: 1.1rem;
+  }
+
   .section-head {
     margin-bottom: 1.35rem;
   }
@@ -1766,8 +1770,113 @@ body:not(.page-home) .hero {
     max-height: 290px;
   }
 
+  .page-home .hero__title {
+    font-size: clamp(2.7rem, 12vw, 4rem);
+    max-width: 8ch;
+  }
+
+  .page-home .hero__lede {
+    font-size: 1rem;
+    max-width: 24ch;
+  }
+
+  .page-home .hero__actions {
+    gap: 0.55rem;
+  }
+
+  .page-home .hero__media {
+    max-height: 220px;
+    border-radius: 8px;
+  }
+
+  .page-home .hero__tag {
+    left: 0.7rem;
+    bottom: 0.7rem;
+    font-size: 0.6rem;
+  }
+
   body:not(.page-home) .hero__title {
     max-width: 10ch !important;
+  }
+
+  .page-home .split {
+    gap: 1rem;
+  }
+
+  .page-home .split__media {
+    display: none;
+  }
+
+  .page-home .split__content h2 {
+    font-size: clamp(2rem, 10vw, 3.1rem);
+    line-height: 1.02;
+    max-width: 8ch;
+  }
+
+  .page-home .split__content .lead {
+    font-size: 0.98rem;
+    line-height: 1.55;
+    max-width: 26ch;
+  }
+
+  .page-home .preview-grid {
+    gap: 0.7rem;
+  }
+
+  .page-home .preview-card {
+    padding: 0.95rem;
+    gap: 0.55rem;
+  }
+
+  .page-home .preview-card__title {
+    font-size: 1.55rem;
+    line-height: 1.05;
+  }
+
+  .page-home .preview-card__text {
+    font-size: 0.86rem;
+    line-height: 1.5;
+  }
+
+  .page-home .section--dark {
+    padding-block: 2.4rem;
+  }
+
+  .page-home .section--dark .split__media {
+    display: block;
+    order: -1;
+  }
+
+  .page-home .section--dark .split__media img {
+    aspect-ratio: 16 / 10;
+  }
+
+  .page-home .section--dark .split__content h2 {
+    font-size: clamp(2.2rem, 11vw, 3.5rem);
+    max-width: 7ch;
+  }
+
+  .page-home .section--dark p {
+    font-size: 0.98rem;
+    line-height: 1.6;
+    max-width: 26ch;
+  }
+
+  .page-home .testimonial {
+    display: none;
+  }
+
+  .page-home .stats {
+    padding-top: 1.15rem;
+    margin-top: 1.35rem;
+  }
+
+  .page-home .stat__value {
+    font-size: clamp(1.8rem, 8vw, 2.4rem);
+  }
+
+  .page-home .cta-banner__title {
+    font-size: clamp(2rem, 10vw, 3rem);
   }
 
   .mobile-panel__footer {
