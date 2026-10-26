@@ -4,6 +4,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
 import { ArrowLeft, ArrowRight, X } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { publicAssetPath } from "@/lib/site";
 import type { GalleryItem } from "@/lib/gallery";
 import { useFocusTrap } from "./use-focus-trap";
 
@@ -80,7 +81,7 @@ export function Lightbox({
         <figure key={item.id} className="page-enter w-full max-w-[min(90vw,540px)]">
           <div className="relative mx-auto aspect-square w-full overflow-hidden bg-espresso">
             <Image
-              src={item.src}
+              src={publicAssetPath(item.src)}
               alt={item.alt}
               fill
               sizes="(min-width: 768px) 540px, 90vw"

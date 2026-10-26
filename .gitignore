@@ -4,3 +4,4 @@ out/
 *.tsbuildinfo
 dev.log
 db/*.db
+.next

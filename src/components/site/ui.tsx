@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { publicAssetPath } from "@/lib/site";
 import type { ReactNode } from "react";
 
 /* ── Monogram ──────────────────────────────────────────── */
@@ -168,7 +169,7 @@ export function Photo({
   return (
     <div className={cn("relative overflow-hidden bg-parchment", ratio, className)}>
       <Image
-        src={src}
+        src={publicAssetPath(src)}
         alt={alt}
         fill
         sizes={sizes ?? "(min-width: 1024px) 50vw, 100vw"}

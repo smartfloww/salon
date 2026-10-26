@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Fraunces, Inter } from "next/font/google";
+import { publicAssetPath } from "@/lib/site";
 import "./globals.css";
 
 const fraunces = Fraunces({
@@ -35,7 +36,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Marahuyo Hair & Beauty Atelier" }],
   creator: "Marahuyo Hair & Beauty Atelier",
   icons: {
-    icon: [{ url: "/favicon.svg", type: "image/svg+xml" }],
+    icon: [{ url: publicAssetPath("/favicon.svg"), type: "image/svg+xml" }],
   },
   openGraph: {
     title: "Marahuyo — Hair & Beauty Atelier",
@@ -47,7 +48,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/images/og-image.jpg",
+        url: publicAssetPath("/images/og-image.jpg"),
         width: 1152,
         height: 864,
         alt: "Inside Marahuyo — a brass arched mirror and a caramel leather styling chair in warm afternoon light",

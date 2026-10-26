@@ -8,7 +8,7 @@ import { Reveal } from "../Reveal";
 import { ArrowLink, CtaLink, Fig, Mark, Photo, SectionHead } from "../ui";
 import { HOME_STRIP } from "@/lib/gallery";
 import { TESTIMONIALS } from "@/lib/testimonials";
-import { directionsUrl, site } from "@/lib/site";
+import { directionsUrl, publicAssetPath, site } from "@/lib/site";
 
 const MARQUEE_ITEMS = [
   "Lived-in color",
@@ -255,7 +255,7 @@ function Signature() {
                     {/* mobile thumb */}
                     <span className="relative block h-20 w-16 shrink-0 overflow-hidden bg-parchment sm:hidden">
                       <Image
-                        src={s.img}
+                        src={publicAssetPath(s.img)}
                         alt=""
                         fill
                         sizes="64px"
@@ -311,7 +311,7 @@ function Signature() {
                 {SIGNATURES.map((s, i) => (
                   <Image
                     key={s.n}
-                    src={s.img}
+                    src={publicAssetPath(s.img)}
                     alt={s.alt}
                     fill
                     sizes="40vw"

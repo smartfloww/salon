@@ -48,6 +48,11 @@ export const site = {
   facebook: "https://facebook.com/marahuyo.qc",
 } as const;
 
+export function publicAssetPath(path: string): string {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+  return `${basePath}${path.startsWith("/") ? path : `/${path}`}`;
+}
+
 /** Google Maps directions to the salon (works on mobile & desktop). */
 export const directionsUrl = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(
   site.address.full + " (Katipunan Avenue)"
