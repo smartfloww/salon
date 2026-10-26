@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 72">
+  <!-- Marahuyo monogram — the wave-m, a hair strand mid-fall. Use with currentColor. -->
+  <path d="M18 52 C18 36 25 28 33 28 C39 28 42 32 42 40 C42 32 45 28 51 28 C59 28 66 36 66 52"
+        fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="74" cy="52" r="3.4" fill="currentColor"/>
+</svg>
